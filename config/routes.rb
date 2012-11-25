@@ -1,4 +1,5 @@
 SampleApp2::Application.routes.draw do
+  resources :users
   get "users/new"
 
   match '/contact', :to => 'pages#contact' # automatically creates named routes (contact_path)
